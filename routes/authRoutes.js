@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { signup, login } = require("../controllers/authController");
 const { protect } = require("../middleware/authMiddleware");  // 🔥 ADD THIS
-const User = require("../models/User");                      // 🔥 ADD THIS
+const User = require("../models/user");                      // 🔥 ADD THIS
 
 // SIGNUP
 router.post("/signup", signup);
